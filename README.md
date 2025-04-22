@@ -11,8 +11,9 @@ Please check the scam list: https://github.com/fif5o/pcileech-ScamList
 
 # writemask
 
-拿最简单的方式来说，你可以在telescan中对所有的灰色/黑色寄存器改为0，对所有的白色寄存器改为1，然后照着抄就好了。例如第094H行为：BF FF 20 00。但你需要记住一个特例，如不修改，在drvscan中你会得到错误。
+拿最简单的方式来说，你可以在telescan中对所有的灰色/黑色寄存器改为0，对所有的白色寄存器改为1，然后照着抄就好了(尽管有些地方应该是0，但并无大碍)。例如第094H行为：BF FF 20 00。但你需要记住一个特例，如不修改，在drvscan中你会得到错误。
 
 将64 bit address capable 设置为0，看起来像00 00 71 04
 
 ![image](https://github.com/user-attachments/assets/7adfd375-1411-42b9-bd44-24610f08f9ce)
+
