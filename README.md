@@ -1,4 +1,4 @@
-# pcileech-guide
+![image](https://github.com/user-attachments/assets/f11fbd43-8172-4e57-bbd0-910579c0ca81)# pcileech-guide
 In order to prevent being deceived, this tutorial has been specially written.
 为了防止上当受骗，特地编写的此教程
 
@@ -17,3 +17,7 @@ Please check the scam list: https://github.com/fif5o/pcileech-ScamList
 
 ![image](https://github.com/user-attachments/assets/7adfd375-1411-42b9-bd44-24610f08f9ce)
 
+# 关于rw 20位和21位
+
+将`rw[20]<= 0`和`rw[19]<= 0;`更改为1的目的是将Command寄存器配置为 ``rw[143:128] <= 16'h0000``(你可以理解为强制设置)
+而正确的配置空间和驱动加载后，修改与否都是不受影响的，因此你大可不必修改此处。
