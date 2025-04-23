@@ -21,3 +21,7 @@ Please check the scam list: https://github.com/fif5o/pcileech-ScamList
 
 将`rw[20]<= 0`和`rw[19]<= 0;`更改为1的目的是将Command寄存器配置为 ``rw[143:128] <= 16'h0000``(你可以理解为强制设置)
 而正确的配置空间和驱动加载后，修改与否都是不受影响的，因此你大可不必修改此处。
+
+# 关于MSI/MSI-X中断的实现
+
+> 前言：有很多人问我为什么他用gpt这种AI实现了MSI的中断后，然而他们依旧在DRVSCAN是"获取中断计数失败"或者是"中断未启用"。这是因为一些教程里教你们在core_top.sv中更改MSI/MSI-X能力的开关，以为这样就可以实现中断，实际上此只声明了模块的存在与否，而开关与此并无太大关联。所以，实现需要运用[**使能信号(Enable Signal)**]([https://](https://aijishu.com/a/1060000000310121))
