@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f11fbd43-8172-4e57-bbd0-910579c0ca81)# pcileech-guide
+# pcileech-guide
 In order to prevent being deceived, this tutorial has been specially written.
 为了防止上当受骗，特地编写的此教程
 
